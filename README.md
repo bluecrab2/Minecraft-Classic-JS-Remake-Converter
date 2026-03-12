@@ -19,6 +19,7 @@ Because of the large text size, pasting this string into most web browser result
 Visit [classic.minecraft.net](classic.minecraft.net). Open the developer menu (with F12) and enter Storage > Local Storage. The `savedGame` value stores the world. Double-click its value to edit it, and paste in the large JSON. It may take some time for the paste to complete. Once it has finished, refresh the page and when you return you should be able to play on your world!
 
 ## Video Tutorial
+[![Minecraft Classic JS Remake Converter Tutorial](https://img.youtube.com/vi/UEe7rUwB3E0/0.jpg)](https://www.youtube.com/watch?v=UEe7rUwB3E0)
 
 ## Extra Information
 ### Axis Flip
