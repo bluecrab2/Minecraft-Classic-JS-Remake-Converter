@@ -23,7 +23,7 @@ Visit [classic.minecraft.net](classic.minecraft.net). Open the developer menu (w
 
 ## Extra Information
 ### Axis Flip
-In the original Pre-Classic and Classic, the coordinate system is right-handed. In the Classic JavaScript remake, a left-handed coordinate system is used. If the original coordinates are converted to Classic JavaScript, the world is mirrored. By default, the program flips the x-axis during conversion to prevent this mirroring. However, in some sense not flipping the axis is a "more faithful/vanilla" conversion since it keeps each block's original coordinates. The `-no_flip` option on the command line can be used to not flip the x-axis. (Difference pictured below, ignore the mushrooms)
+In the original Pre-Classic and Classic, the coordinate system is right-handed. In the Classic JavaScript remake, a left-handed coordinate system is used. If the original coordinates are converted to Classic JavaScript, the world is mirrored. By default, this program flips the x-axis during conversion to prevent this mirroring. However, in some sense not flipping the axis is a "more faithful/vanilla" conversion since it keeps each block's original coordinates. The `-no_flip` option on the command line can be used to not flip the x-axis. (Difference pictured below)
 ![Demonstration of the different coordinate system in Java vs. JavaScript.](media/JavaScript%20Axis%20Flip.png)
 
 ### Pre-Classic and Classic Reading
@@ -34,7 +34,7 @@ The Minecraft JavaScript Classic remake world is saved in the `savedGame` local 
 | Key | Value |
 | --- | ----- |
 | worldSeed | The seed that determines world generation |
-| changedBlocks | Only the blocks that have changed in a world since generation are saved. Each block includes its position and ID. |
+| changedBlocks | Only the blocks that changed after generation are saved. Each block includes its position and ID. |
 | worldSize | The size of the world in the x and z direction. The actual world size is 1 less than the worldSize value. E.g. worldSize=128 -> 127x127 world. |
 | version | Unused value always set to 1 |
 
