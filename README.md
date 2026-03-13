@@ -12,7 +12,7 @@ Place the JAR file in the same folder as your Classic or Pre-Classic .dat or .mi
 Run the JAR by double-clicking it. It will convert all .dat and .mine files in its folder into a corresponding .json file. The .json file contains the world converted to Classic JS format.
 
 ### Running World on Web Browser
-Once you have your world's JSON file, you need to copy it into your browser. This JSON file will be likely be very large (~112 MB for a 256x64x256 world). Don't attempt to open that file in an advanced text editor like Notepad++ or VS Code because the file size will likely crash these programs. Instead, use a very simple text editor like Notepad on Windows. Select all text (CTRL + A) and copy it (CTRL + C).
+Once you have your world's JSON file, you need to copy it into your browser. This JSON file will be likely be very large (~112 MB for a 256x64x256 world). Open the file in a text editor, select all text (CTRL + A), and copy it (CTRL + C).
 
 Because of the large text size, pasting this string into most web browser results in them crashing. A fix is known **only on the Firefox browser** that allows the browser to handle the large JSON string. On Firefox, visit [about:config](about:config), and change the value for `dom.storage.default_quota`. This value limits how much data a site can use in kilobytes. Set this value to be larger than your JSON file's size. For example, if the JSON is 114,000 kilobytes set to dom.storage.default_quota to over 114,000 (you can add extra space to be safe, so 200,000 would be a valid value).
 
